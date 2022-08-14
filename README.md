@@ -68,3 +68,36 @@ Below is the memory representation of a string “Geeks”::
 
 ![image](https://user-images.githubusercontent.com/26576892/184538026-c66b8fb9-b430-4a7a-be97-3d13e8f54422.png)
 
+
+##Accepting string as the input
+Till now, we have used scanf to accept the input from the user. However, it can also be used in the case of strings but with a different scenario. Consider the below code which stores the string while space is encountered.
+
+#include<stdio.h>  
+void main ()  
+{  
+    char s[20];  
+    printf("Enter the string:");  
+    scanf("%s",s);  
+    printf("You entered:%s",s);  
+}  
+
+### Output
+### Enter the string:My name is Jewel                                                                
+### You entered:My
+
+It is clear from the output that, the above code will not work for space separated strings. To make this code working for the space separated strings, the minor changed required in the scanf function, i.e., instead of writing scanf("%s",s), we must write: 
+### scanf("%[^\n]s",s) 
+which instructs the compiler to store the string s while the new line (\n) is encountered. Let's consider the following example to store the space-separated strings.
+
+#include<stdio.h>  
+void main ()  
+{  
+    char s[20];  
+    printf("Enter the string?");  
+    scanf("%[^\n]s",s);  
+    printf("You entered %s",s);  
+}  
+Output
+
+Enter the string?javatpoint is the best
+You entered javatpoint is the best
