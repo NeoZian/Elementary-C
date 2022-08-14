@@ -63,4 +63,5 @@ So, the initialization of a string can be:
 4. char str[14] = {'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};
 
 Below is the memory representation of a string “Geeks”::
+
 ![image](https://user-images.githubusercontent.com/26576892/184537973-7799a8d1-f366-47a4-954f-d0a5c906a890.png)
