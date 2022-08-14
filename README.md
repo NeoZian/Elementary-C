@@ -65,3 +65,6 @@ So, the initialization of a string can be:
 Below is the memory representation of a string “Geeks”::
 
 ![image](https://user-images.githubusercontent.com/26576892/184537973-7799a8d1-f366-47a4-954f-d0a5c906a890.png)
+
+![image](https://user-images.githubusercontent.com/26576892/184538026-c66b8fb9-b430-4a7a-be97-3d13e8f54422.png)
+
