@@ -52,3 +52,15 @@ There are two main differences between char array and literal.
 
 We need to add the null character '\0' at the end of the array by ourself whereas, it is appended internally by the compiler in the case of the character array.
 The string literal cannot be reassigned to another set of characters whereas, we can reassign the characters of the array.
+So, the initialization of a string can be:
+
+1. char str[] = "GeeksforGeeks";
+
+2. char str[50] = "GeeksforGeeks";
+
+3. char str[] = {'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};
+
+4. char str[14] = {'G','e','e','k','s','f','o','r','G','e','e','k','s','\0'};
+
+Below is the memory representation of a string “Geeks”::
+![image](https://user-images.githubusercontent.com/26576892/184537973-7799a8d1-f366-47a4-954f-d0a5c906a890.png)
