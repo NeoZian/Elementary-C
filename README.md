@@ -30,4 +30,22 @@ There are two ways to declare a string in c language.
 
 1. By char array
 2. By string literal
+Let's see the example of declaring string by char array in C language.
 
+char ch[10]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};  
+As we know, array index starts from 0, so it will be represented as in the figure given below.
+
+C Strings
+While declaring string, size is not mandatory. So we can write the above code as given below:
+
+char ch[]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};  
+We can also define the string by the string literal in C language. For example:
+
+char ch[]="javatpoint";  
+In such case, '\0' will be appended at the end of the string by the compiler.
+
+Difference between char array and string literal
+There are two main differences between char array and literal.
+
+We need to add the null character '\0' at the end of the array by ourself whereas, it is appended internally by the compiler in the case of the character array.
+The string literal cannot be reassigned to another set of characters whereas, we can reassign the characters of the array.
