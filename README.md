@@ -69,19 +69,19 @@ Below is the memory representation of a string “Geeks”::
 ![image](https://user-images.githubusercontent.com/26576892/184538026-c66b8fb9-b430-4a7a-be97-3d13e8f54422.png)
 
 
-##Accepting string as the input
+## Accepting string as the input
 Till now, we have used scanf to accept the input from the user. However, it can also be used in the case of strings but with a different scenario. Consider the below code which stores the string while space is encountered.
 
 #include<stdio.h>  
 void main ()  
 {  
     char s[20];  
-    printf("Enter the string:");  
-    scanf("%s",s);  
+ ###   printf("Enter the string:");  
+###    scanf("%s",s);  
     printf("You entered:%s",s);  
 }  
 
-### Output
+### Output:::
 ### Enter the string:My name is Jewel                                                                
 ### You entered:My
 
@@ -93,11 +93,11 @@ which instructs the compiler to store the string s while the new line (\n) is en
 void main ()  
 {  
     char s[20];  
-    printf("Enter the string?");  
-    scanf("%[^\n]s",s);  
-    printf("You entered %s",s);  
+###    printf("Enter the string:");  
+###    scanf("%[^\n]s",s);  
+    printf("You entered: %s",s);  
 }  
 Output
 
-Enter the string?javatpoint is the best
-You entered javatpoint is the best
+Enter the string:I am Jewel
+You entered: I am Jewel
