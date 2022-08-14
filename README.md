@@ -35,10 +35,13 @@ Let's see the example of declaring string by char array in C language.
 char ch[10]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};  
 As we know, array index starts from 0, so it will be represented as in the figure given below.
 
-C Strings
+![image](https://user-images.githubusercontent.com/26576892/184537829-1f1b37bd-11cc-4247-b08d-878532727c2c.png)
+
+
 While declaring string, size is not mandatory. So we can write the above code as given below:
 
 char ch[]={'j', 'a', 'v', 'a', 't', 'p', 'o', 'i', 'n', 't', '\0'};  
+
 We can also define the string by the string literal in C language. For example:
 
 char ch[]="javatpoint";  
