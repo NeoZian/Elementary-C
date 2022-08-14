@@ -99,5 +99,5 @@ void main ()
 }  
 Output
 
-Enter the string:I am Jewel
-You entered: I am Jewel
+### Enter the string:I am Jewel
+### You entered: I am Jewel
