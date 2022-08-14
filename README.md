@@ -28,5 +28,6 @@ The string can be defined as the one-dimensional array of characters terminated 
 
 There are two ways to declare a string in c language.
 
-By char array
-By string literal
+1. By char array
+2. By string literal
+
