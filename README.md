@@ -126,11 +126,61 @@ calloc()
 free()
 realloc()
 
+# C malloc() method
+The “malloc” or “memory allocation” method in C is used to dynamically allocate a single large block of memory with the specified size. It returns a pointer of type void which can be cast into a pointer of any form. It doesn’t Initialize memory at execution time so that it has initialized each block with the default garbage value initially. 
+
+Syntax: 
+
+### ptr = (cast-type*) malloc(byte-size)
+
+For Example:
+
+### ptr = (int*) malloc(100 * sizeof(int));
 
 
+Since the size of int is 4 bytes, this statement will allocate 400 bytes of memory. And, the pointer ptr holds the address of the first byte in the allocated memory.
+![image](https://user-images.githubusercontent.com/26576892/185493153-d14f8ece-4a24-437b-964b-c193cd20889b.png)
+
+If space is insufficient, allocation fails and returns a NULL pointer.
+
+# C calloc() method
+“calloc” or “contiguous allocation” method in C is used to dynamically allocate the specified number of blocks of memory of the specified type. it is very much similar to malloc() but has two different points and these are:
+It initializes each block with a default value ‘0’.
+It has two parameters or arguments as compare to malloc().
+Syntax: 
+
+### ptr = (cast-type*)calloc(n, element-size);
+
+here, n is the no. of elements and element-size is the size of each element.
+For Example: 
+
+### ptr = (float*) calloc(25, sizeof(float));
+This statement allocates contiguous space in memory for 25 elements each with the size of the float.
+ 
+![image](https://user-images.githubusercontent.com/26576892/185493251-e5541d50-f7f2-4079-a058-445868c9d0f4.png)
+
+If space is insufficient, allocation fails and returns a NULL pointer.
+
+# C free() method
+“free” method in C is used to dynamically de-allocate the memory. The memory allocated using functions malloc() and calloc() is not de-allocated on their own. Hence the free() method is used, whenever the dynamic memory allocation takes place. It helps to reduce wastage of memory by freeing it.
+
+Syntax: 
+
+### free(ptr);
+
+![image](https://user-images.githubusercontent.com/26576892/185493419-67eb7ffd-a99c-4d13-a608-5c68f403fc80.png)
 
 
+# C realloc() method
+“realloc” or “re-allocation” method in C is used to dynamically change the memory allocation of a previously allocated memory. In other words, if the memory previously allocated with the help of malloc or calloc is insufficient, realloc can be used to dynamically re-allocate memory. re-allocation of memory maintains the already present value and new blocks will be initialized with the default garbage value.
 
+Syntax: 
+
+### ptr = realloc(ptr, newSize);
+
+where ptr is reallocated with new size 'newSize'.
+
+![image](https://user-images.githubusercontent.com/26576892/185493486-7fed4817-9419-4663-9c9f-899fd3a016c2.png)
 
 
 
