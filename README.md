@@ -16,7 +16,9 @@ A few more:
 ![size2](https://user-images.githubusercontent.com/26576892/184515248-4a7d01ff-4c1a-440c-9938-1ec293dc0d7b.PNG)
 
 
-##Char:
+The size of an int is really compiler dependent. Back in the day, when processors were 16 bit, an int was 2 bytes. Nowadays, it's most often 4 bytes on a 32-bit as well as 64-bit systems. Still, using sizeof(int) is the best way to get the size of an integer for the specific system the program is executed on
+
+## Char:
 C uses char type to store characters and letters. However, the char type is integer type because underneath C stores integer numbers instead of characters.In C, char values are stored in 1 byte in memory,and value range from -128 to 127 or 0 to 255.
 In order to represent characters, the computer has to map each integer with a corresponding character using a numerical code. The most common numerical code is ASCII, which stands for American Standard Code for Information Interchange.
 
